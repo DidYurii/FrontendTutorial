@@ -1,0 +1,78 @@
+
+body{
+    font-family: "Audiowide", sans-serif;
+}
+
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "main  main about"
+    "contactus contactus contactus ";
+    grid-gap: 16px;
+    grid-template-columns: auto-fill;
+    
+}
+.containermain{
+    display: grid;
+     grid-gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(226px, 1fr));
+    }
+.containerabout{
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+}
+
+.item{
+    padding: 0px ;
+    border: 1px solid black;
+}
+
+.header {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: sticky; 
+    top: 0;
+      }
+  
+.main{
+    grid-area: main;
+    display: grid;
+    background-color: rgb(202, 139, 62);
+    }
+.about{
+    grid-area: about;
+    display: grid;
+    background-color: rgb(182, 121, 77);
+}
+.contactus{
+    grid-area: contactus;
+}
+.main1{
+    min-height: 500px;
+    background-color: blue;
+}
+.main2{
+    min-height: 500px;
+    background-color: rgb(32, 32, 36);
+}
+.main3{
+    min-height: 500px;
+    background-color: rgb(214, 22, 157);
+}
+.about1{
+    min-height: 500px;
+    background-color: rgb(29, 156, 61);
+}
+.about2{
+    min-height: 500px;
+    background-color: rgb(173, 171, 22);
+}
+.about3{
+     min-height: 500px;
+    background-color: rgb(204, 61, 18);
+}
